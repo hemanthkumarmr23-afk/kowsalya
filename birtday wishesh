@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Kowsalya ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#ff758c,#ff7eb3,#ffc371);
+
+overflow-x:hidden;
+
+color:white;
+
+text-align:center;
+
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+padding:20px;
+
+}
+
+.hero img{
+
+width:280px;
+
+height:280px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:8px solid white;
+
+box-shadow:0 0 30px rgba(255,255,255,.5);
+
+}
+
+h1{
+
+font-size:55px;
+
+margin-top:20px;
+
+animation:glow 2s infinite alternate;
+
+}
+
+h2{
+
+margin-top:10px;
+
+font-size:32px;
+
+}
+
+p{
+
+font-size:20px;
+
+margin-top:20px;
+
+line-height:1.8;
+
+max-width:850px;
+
+}
+
+button{
+
+margin-top:35px;
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:40px;
+
+font-size:20px;
+
+cursor:pointer;
+
+background:white;
+
+color:#ff4081;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.1);
+
+}
+
+.gallery{
+
+padding:80px 20px;
+
+}
+
+.photos{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:20px;
+
+max-width:1000px;
+
+margin:auto;
+
+margin-top:40px;
+
+}
+
+.photos img{
+
+width:100%;
+
+border-radius:20px;
+
+border:5px solid white;
+
+}
+
+footer{
+
+padding:40px;
+
+font-size:20px;
+
+}
+
+@keyframes glow{
+
+from{
+
+text-shadow:0 0 10px white;
+
+}
+
+to{
+
+text-shadow:0 0 40px yellow;
+
+}
+
+}
+
+.heart{
+
+position:fixed;
+
+bottom:-20px;
+
+font-size:30px;
+
+animation:float 8s linear infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-110vh);
+
+opacity:0;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<img src="photo1.jpg">
+
+<h1>🎂 Happy Birthday 🎂</h1>
+
+<h2>Kowsalya ❤️</h2>
+
+<p>
+
+A friend is a friend, but a best friend is even better.
+
+Happy Birthday to the best friend anyone could ask for.
+
+May your life always be filled with happiness,
+
+good health,
+
+love,
+
+success,
+
+and beautiful memories.
+
+</p>
+
+<button onclick="surprise()">
+
+🎁 Click Here
+
+</button>
+
+<h2 id="msg"></h2>
+
+</div>
+
+<div class="gallery">
+
+<h1>📸 Our Beautiful Memories ❤️</h1>
+
+<div class="photos">
+
+<img src="photo1.jpg">
+
+<img src="photo2.jpg">
+
+</div>
+
+</div>
+
+<footer>
+
+💖
+
+Dear Kowsalya,
+
+Thank you for being such a wonderful friend.
+
+Every memory with you is special.
+
+May this birthday bring you endless joy,
+
+success,
+
+peace,
+
+and happiness.
+
+Keep smiling forever.
+
+❤️
+
+<br><br>
+
+With Best Wishes,
+
+<b>Hemanth</b>
+
+<br><br>
+
+🎂 Birthday : 29 September 2003
+
+</footer>
+
+<script>
+
+function surprise(){
+
+document.getElementById("msg").innerHTML=
+
+"🎉 Happy Birthday Kowsalya ❤️<br>You are the best friend anyone could ask for. May all your dreams come true! 🎂✨";
+
+}
+
+function heart(){
+
+const h=document.createElement("div");
+
+h.innerHTML="💖";
+
+h.className="heart";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.fontSize=(20+Math.random()*30)+"px";
+
+document.body.appendChild(h);
+
+setTimeout(()=>{
+
+h.remove();
+
+},8000);
+
+}
+
+setInterval(heart,300);
+
+</script>
+
+</body>
+
+</html>
